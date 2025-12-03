@@ -30,14 +30,18 @@
         }
         
         .controls-container {
-            display: inline-block;
-            background: rgba(0, 0, 0, 0.4);
-            padding: 15px 25px;
-            border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            margin-top: 10px;
-            backdrop-filter: blur(5px);
-        }
+    position: fixed;     /* <--- Fissa la posizione rispetto allo schermo */
+    bottom: 30px;        /* <--- In basso */
+    right: 30px;          /* <--- A sinistra */
+    text-align: center;    /* <--- Allinea il testo a sinistra */
+    
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: 11;         /* Assicura che stia sopra a tutto */
+}
 
         p { font-size: 0.9rem; color: #ccc; margin: 5px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         .status { color: #ffae00; font-weight: bold; text-transform: uppercase; }
